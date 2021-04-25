@@ -299,7 +299,7 @@ export default {
   },
   methods: {
     gotoAboutUs: function () {
-      console.log('去关于我们')
+      console.log('去关于我们ddd')
       this.$router.push({ path: '/aboutus#' })
     },
     gotoContactWay: function () {
