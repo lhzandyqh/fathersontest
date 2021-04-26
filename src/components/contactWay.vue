@@ -3,6 +3,7 @@
     <div class="head_nv">
       <div class="logo">
         <img src="../assets/home_logo.jpg">
+        <img class="logo_university" src="../assets/home_university.jpg">
         <div class="span_container">
           <div class="logo_span">
             <span>教学诊改平台</span>
@@ -60,29 +61,35 @@
             </div>
             <div class="chuan_con">
               <div class="chuan_pic">
-                <img src="../assets/icon/chuanzhen.png">
+                <img src="../assets/icon/wx.png">
+<!--                <img src="../assets/icon/chuanzhen.png">-->
               </div>
-              <div class="chuan_char">
-                <p style="font-size: 14px"><span style="font-weight: bold;font-size: 14px">传真：</span></p>
-                <p style="font-size: 14px">3434552245</p>
+<!--              <div class="chuan_char">-->
+<!--                <p style="font-size: 14px"><span style="font-weight: bold;font-size: 14px">传真：</span></p>-->
+<!--                <p style="font-size: 14px">3434552245</p>-->
+<!--              </div>-->
+              <div class="wx_img">
               </div>
             </div>
           </div>
           <div class="contact_first" style="margin-top: 2%">
-            <div class="wx_con">
-              <div class="wx_pic">
-                <img src="../assets/icon/wx.png">
-              </div>
-              <div class="wx_img">
-              </div>
-            </div>
+<!--            <div class="wx_con">-->
+<!--              <div class="wx_pic">-->
+<!--                <img src="../assets/icon/wx.png">-->
+<!--              </div>-->
+<!--              <div class="wx_img">-->
+<!--              </div>-->
+<!--            </div>-->
             <div class="address_con">
               <div class="address_pic">
                 <img src="../assets/icon/dizhi.png">
               </div>
               <div class="address_char">
-                <p style="font-size: 18px"><span style="font-weight: bold;font-size: 18px">通信地址：</span></p>
-                <p style="font-size: 18px">北京市海淀区某某路234号</p>
+                <p style="font-size: 18px; font-weight: bold;color: #050505"><span style="font-weight: bold;font-size: 18px">联系地址：</span></p>
+                <p style="font-size: 18px">北京：北京市海淀区中关村科学院南路14号</p>
+                <p style="font-size: 18px">济南：山东济南高新区舜华路1500号</p>
+                <p style="font-size: 18px">石家庄：河北石家庄桥西区大经街28号</p>
+                <p style="font-size: 18px">沈阳：沈阳市东陵区南坪东路16号</p>
               </div>
             </div>
           </div>
@@ -249,25 +256,34 @@ body{
   width: 30%;
   margin-left: 10%;
 }
+.logo .logo_university{
+  float: left;
+  width: 26%;
+  height: 100%;
+  padding: 3%;
+  box-sizing: border-box;
+  margin-left: -5%;
+}
 .span_container {
   float: left;
   height: 100%;
-  width: 60%;
+  width: 30%;
+  /*width: 100px;*/
   /*background-color: #42b983;*/
   position: relative;
 }
 .logo_span {
   position: absolute;
-  width: 100%;
+  width: 150%;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-40%,-50%);
 }
 .logo_span span {
   width: 100%;
   color: #26a9de;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-family:  Arial, Helvetica, sans-serif;
 }
 .nav {
@@ -584,20 +600,21 @@ body{
   /*background-color: #44b7e7;*/
 }
 .address_con {
-  width: 70%;
+  width: 97%;
   height: 100%;
   /*background-color: #75e744;*/
   box-shadow: #ccc 5px 0px 8px 0px;
   position: relative;
 }
 .address_pic {
-  margin-top: 8%;
-  margin-left: 5%;
+  margin-top: 5%;
+  margin-left: 10%;
   float: left;
 }
 .address_char {
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 10%;
+  left: 25%;
+  color: #6d6a6a;
 }
 </style>

@@ -3,6 +3,7 @@
     <div class="head_nv">
       <div class="logo">
         <img src="../assets/home_logo.jpg">
+        <img class="logo_university" src="../assets/home_university.jpg">
         <div class="span_container">
           <div class="logo_span">
             <span>教学诊改平台</span>
@@ -20,12 +21,21 @@
       </div>
     </div>
     <div class="carousel_container">
-<!--      <el-carousel trigger="click" height="500px">-->
+      <div class="carousel_img1">
+        <img src="../assets/carousel1.png" width="100%" height="100%">
+      </div>
+      <div class="carousel_img2">
+        <img src="../assets/carousel2.png" width="100%" height="100%">
+      </div>
+      <div class="carousel_img3">
+        <img src="../assets/carousel3.png" width="100%" height="100%">
+      </div>
+      <!--      <el-carousel trigger="click" height="500px">-->
 <!--        <el-carousel-item v-for="item in 4" :key="item">-->
 <!--          <h3 class="small">{{ item }}</h3>-->
 <!--        </el-carousel-item>-->
 <!--      </el-carousel>-->
-      <img src="../assets/homepage1.jpg" width="100%" height="100%">
+<!--      <img src="../assets/homepage1.jpg" width="100%" height="100%">-->
       <!--      <Swiper v-if="list.length > 0">-->
 <!--        <Slide v-for="(item,index) in list" :key="index">-->
 <!--        </Slide>-->
@@ -355,25 +365,34 @@ body{
   width: 30%;
   margin-left: 10%;
 }
+.logo .logo_university{
+  float: left;
+  width: 26%;
+  height: 100%;
+  padding: 3%;
+  box-sizing: border-box;
+  margin-left: -5%;
+}
 .span_container {
   float: left;
   height: 100%;
-  width: 60%;
+  width: 30%;
+  /*width: 100px;*/
   /*background-color: #42b983;*/
   position: relative;
 }
 .logo_span {
   position: absolute;
-  width: 100%;
+  width: 150%;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-40%,-50%);
 }
 .logo_span span {
   width: 100%;
   color: #26a9de;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-family:  Arial, Helvetica, sans-serif;
 }
 .nav {
@@ -403,10 +422,36 @@ body{
   border-bottom:2px solid #26a9de;
 }
 .carousel_container {
+  position: relative;
   width: 100%;
   height: 500px;
-  background-color: skyblue;
+  /*background-color: skyblue;*/
+  background:url("../assets/homepage1.jpg") no-repeat center;
   margin-top: 4.5%;
+}
+.carousel_img1 {
+  position: absolute;
+  width: 40%;
+  height: 25%;
+  top: 30%;
+  left: 40%;
+  /*background-color: #34d922;*/
+}
+.carousel_img2 {
+  position: absolute;
+  width: 40%;
+  height: 25%;
+  top: 50%;
+  left: 60%;
+  /*background-color: #d4ad4c;*/
+}
+.carousel_img3 {
+  position: absolute;
+  width: 50%;
+  height: 13%;
+  top: 80%;
+  left: 45%;
+  /*background-color: #44e7cf;*/
 }
 .system_container {
   width: 100%;

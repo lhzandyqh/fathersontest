@@ -3,6 +3,7 @@
     <div class="head_nv">
       <div class="logo">
         <img src="../assets/home_logo.jpg">
+        <img class="logo_university" src="../assets/home_university.jpg">
         <div class="span_container">
           <div class="logo_span">
             <span>教学诊改平台</span>
@@ -217,25 +218,34 @@ body{
   width: 30%;
   margin-left: 10%;
 }
+.logo .logo_university{
+  float: left;
+  width: 26%;
+  height: 100%;
+  padding: 3%;
+  box-sizing: border-box;
+  margin-left: -5%;
+}
 .span_container {
   float: left;
   height: 100%;
-  width: 60%;
+  width: 30%;
+  /*width: 100px;*/
   /*background-color: #42b983;*/
   position: relative;
 }
 .logo_span {
   position: absolute;
-  width: 100%;
+  width: 150%;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-40%,-50%);
 }
 .logo_span span {
   width: 100%;
   color: #26a9de;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-family:  Arial, Helvetica, sans-serif;
 }
 .nav {
