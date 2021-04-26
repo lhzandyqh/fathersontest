@@ -4,7 +4,6 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import routers from '@/routers'
-import echarts from 'echarts'
 
 const router = new VueRouter({
   mode: 'hash',
@@ -13,7 +12,6 @@ const router = new VueRouter({
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.config.productionTip = false
-Vue.prototype.$echarts = echarts
 
 new Vue({
   render: h => h(App),

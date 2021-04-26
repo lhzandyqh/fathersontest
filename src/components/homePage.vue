@@ -20,12 +20,13 @@
       </div>
     </div>
     <div class="carousel_container">
-      <el-carousel trigger="click" height="500px">
-        <el-carousel-item v-for="item in 4" :key="item">
-          <h3 class="small">{{ item }}</h3>
-        </el-carousel-item>
-      </el-carousel>
-<!--      <Swiper v-if="list.length > 0">-->
+<!--      <el-carousel trigger="click" height="500px">-->
+<!--        <el-carousel-item v-for="item in 4" :key="item">-->
+<!--          <h3 class="small">{{ item }}</h3>-->
+<!--        </el-carousel-item>-->
+<!--      </el-carousel>-->
+      <img src="../assets/homepage1.jpg" width="100%" height="100%">
+      <!--      <Swiper v-if="list.length > 0">-->
 <!--        <Slide v-for="(item,index) in list" :key="index">-->
 <!--        </Slide>-->
 <!--      </Swiper>-->
@@ -35,7 +36,7 @@
         <span>高职诊改发展</span>
       </div>
       <div class="zg_news_content">
-
+<!--        <img src="../assets/homepage2.jpg" width="100%" height="100%">-->
       </div>
     </div>
     <div class="system_container" id="product">
@@ -470,6 +471,7 @@ body{
 .footer_content {
   width: 100%;
   height: 85%;
+  background-color: #0064b0;
 }
 .p_one {
   float: left;
@@ -519,7 +521,8 @@ body{
 .copyright {
   width: 100%;
   height: 15%;
-  background-color: #44b7e7;
+  /*background-color: #44b7e7;*/
+  background-color: #004c8c;
   text-align: center;
 }
 .copyright span {
@@ -540,11 +543,11 @@ body{
   height: 60%;
   margin-left: 20%;
   margin-top: 10%;
-  background-color: #4260b9;
+  background-color: #dbdee7;
 }
 .code_title span {
   font-size: 14px;
-  color: #6f6b6b;
+  color: #ffffff;
 }
 .features_container {
   width: 100%;

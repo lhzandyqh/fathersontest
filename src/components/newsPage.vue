@@ -20,11 +20,12 @@
       </div>
     </div>
     <div class="carousel_container">
-      <el-carousel trigger="click" height="500px">
-        <el-carousel-item v-for="item in 4" :key="item">
-          <h3 class="small">{{ item }}</h3>
-        </el-carousel-item>
-      </el-carousel>
+<!--      <el-carousel trigger="click" height="500px">-->
+<!--        <el-carousel-item v-for="item in 4" :key="item">-->
+<!--          <h3 class="small">{{ item }}</h3>-->
+<!--        </el-carousel-item>-->
+<!--      </el-carousel>-->
+      <img src="../assets/homepage2.jpg" width="100%" height="100%">
       <!--      <Swiper v-if="list.length > 0">-->
       <!--        <Slide v-for="(item,index) in list" :key="index">-->
       <!--        </Slide>-->
@@ -33,15 +34,15 @@
     <div class="news_container top_control">
       <div class="news_item" >
         <div class="news_item_img">
-          <img>
+          <img src="../assets/newspage1.png" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
-            <span>文章名字测试</span>
+            <span>高职院校诊改平台简析</span>
           </div>
           <div class="item_title_second">
             <div class="title_date">
-              <span>2021-04-20</span>
+              <span>2020-10-09</span>
             </div>
             <div class="title_more">
               <span>了解更多</span>
@@ -51,15 +52,15 @@
       </div>
       <div class="news_item" style="margin-left: 5%">
         <div class="news_item_img">
-          <img>
+          <img src="../assets/newspage2.png" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
-            <span>文章名字测试</span>
+            <span>诊改8字螺旋理念</span>
           </div>
           <div class="item_title_second">
             <div class="title_date">
-              <span>2021-04-20</span>
+              <span>2020-10-09</span>
             </div>
             <div class="title_more">
               <span>了解更多</span>
@@ -69,15 +70,15 @@
       </div>
       <div class="news_item" style="margin-left: 5%">
         <div class="news_item_img">
-          <img>
+          <img src="../assets/newspage3.png" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
-            <span>文章名字测试</span>
+            <span>2020中等职业院校年度质量报告</span>
           </div>
           <div class="item_title_second">
             <div class="title_date">
-              <span>2021-04-20</span>
+              <span>2020-12-28</span>
             </div>
             <div class="title_more">
               <span>了解更多</span>
@@ -89,15 +90,15 @@
     <div class="news_container top_control" style="margin-bottom: 4%">
       <div class="news_item" >
         <div class="news_item_img">
-          <img>
+          <img src="../assets/newspage4.png" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
-            <span>文章名字测试</span>
+            <span>诊改最新动态</span>
           </div>
           <div class="item_title_second">
             <div class="title_date">
-              <span>2021-04-20</span>
+              <span>2020-09-16</span>
             </div>
             <div class="title_more">
               <span>了解更多</span>
@@ -107,15 +108,15 @@
       </div>
       <div class="news_item" style="margin-left: 5%">
         <div class="news_item_img">
-          <img>
+          <img src="../assets/newspage5.png" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
-            <span>文章名字测试</span>
+            <span>2020云南工程职业学院教学诊断工作</span>
           </div>
           <div class="item_title_second">
             <div class="title_date">
-              <span>2021-04-20</span>
+              <span>2020-10-29</span>
             </div>
             <div class="title_more">
               <span>了解更多</span>
@@ -125,15 +126,15 @@
       </div>
       <div class="news_item" style="margin-left: 5%">
         <div class="news_item_img">
-          <img>
+          <img src="../assets/newspage6.png" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
-            <span>文章名字测试</span>
+            <span>陕西高校巡视诊断组开展巡视工作</span>
           </div>
           <div class="item_title_second">
             <div class="title_date">
-              <span>2021-04-20</span>
+              <span>2020-10-25</span>
             </div>
             <div class="title_more">
               <span>了解更多</span>
@@ -375,6 +376,7 @@ body{
 .footer_content {
   width: 100%;
   height: 85%;
+  background-color: #0064b0;
 }
 .p_one {
   float: left;
@@ -424,7 +426,7 @@ body{
 .copyright {
   width: 100%;
   height: 15%;
-  background-color: #44b7e7;
+  background-color: #004c8c;
   text-align: center;
 }
 .copyright span {
@@ -445,11 +447,11 @@ body{
   height: 60%;
   margin-left: 20%;
   margin-top: 10%;
-  background-color: #4260b9;
+  background-color: #dbdee7;
 }
 .code_title span {
   font-size: 14px;
-  color: #6f6b6b;
+  color: #ffffff;
 }
 .features_container {
   width: 100%;

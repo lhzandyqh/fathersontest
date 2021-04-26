@@ -365,6 +365,7 @@ body{
 .footer_content {
   width: 100%;
   height: 85%;
+  background-color: #0064b0;
 }
 .p_one {
   float: left;
@@ -414,7 +415,7 @@ body{
 .copyright {
   width: 100%;
   height: 15%;
-  background-color: #44b7e7;
+  background-color: #004c8c;
   text-align: center;
 }
 .copyright span {
@@ -435,11 +436,11 @@ body{
   height: 60%;
   margin-left: 20%;
   margin-top: 10%;
-  background-color: #4260b9;
+  background-color: #dbdee7;
 }
 .code_title span {
   font-size: 14px;
-  color: #6f6b6b;
+  color: #c4aeae;
 }
 .features_container {
   width: 100%;

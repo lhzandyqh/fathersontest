@@ -19,37 +19,43 @@
         </ul>
       </div>
     </div>
-    <div class="carousel_container">
-      <el-carousel trigger="click" height="500px">
-        <el-carousel-item v-for="item in 4" :key="item">
-          <h3 class="small">{{ item }}</h3>
-        </el-carousel-item>
-      </el-carousel>
-      <!--      <Swiper v-if="list.length > 0">-->
-      <!--        <Slide v-for="(item,index) in list" :key="index">-->
-      <!--        </Slide>-->
-      <!--      </Swiper>-->
-    </div>
+<!--    <div class="carousel_container">-->
+<!--      <el-carousel trigger="click" height="500px">-->
+<!--        <el-carousel-item v-for="item in 4" :key="item">-->
+<!--          <h3 class="small">{{ item }}</h3>-->
+<!--        </el-carousel-item>-->
+<!--      </el-carousel>-->
+<!--      &lt;!&ndash;      <Swiper v-if="list.length > 0">&ndash;&gt;-->
+<!--      &lt;!&ndash;        <Slide v-for="(item,index) in list" :key="index">&ndash;&gt;-->
+<!--      &lt;!&ndash;        </Slide>&ndash;&gt;-->
+<!--      &lt;!&ndash;      </Swiper>&ndash;&gt;-->
+<!--    </div>-->
     <div class="features_container">
       <div class="features_title">
         <span>关于我们</span>
       </div>
       <div class="features_p">
-        <span>深度研究相关政策，并与高职院校积极合作，积累了信息化规划设计、标准建设、系统集成、项目实施、运行维护的经验，为高职院校教学诊改建设提供嗯咯完整的解决方案并取得了良好的效果</span>
+        <div class="features_content">
+          <div class="content1"></div>
+          <div class="content2"></div>
+          <div class="content3">
+            <span>&#8195;&#8195;深度研究相关政策，并与高职院校积极合作，积累了信息化规划设计、标准建设、系统集成、项目实施、运行维护的经验，为高职院校教学诊改建设提供嗯咯完整的解决方案并取得了良好的效果</span>
+          </div>
+        </div>
       </div>
-      <div class="features_detail">
-<!--        <div class="features_item">-->
-<!--        </div>-->
-<!--        <div class="features_item">-->
+<!--      <div class="features_detail">-->
+<!--&lt;!&ndash;        <div class="features_item">&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="features_item">&ndash;&gt;-->
 
-<!--        </div>-->
-<!--        <div class="features_item">-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="features_item">&ndash;&gt;-->
 
-<!--        </div>-->
-<!--        <div class="features_item">-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="features_item">&ndash;&gt;-->
 
-<!--        </div>-->
-      </div>
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--      </div>-->
     </div>
     <div class="footer">
       <div class="footer_content">
@@ -327,6 +333,7 @@ body{
 .footer_content {
   width: 100%;
   height: 85%;
+  background-color: #0064b0;
 }
 .p_one {
   float: left;
@@ -376,7 +383,7 @@ body{
 .copyright {
   width: 100%;
   height: 15%;
-  background-color: #44b7e7;
+  background-color: #004c8c;
   text-align: center;
 }
 .copyright span {
@@ -397,15 +404,16 @@ body{
   height: 60%;
   margin-left: 20%;
   margin-top: 10%;
-  background-color: #4260b9;
+  background-color: #dbdee7;
 }
 .code_title span {
   font-size: 14px;
-  color: #6f6b6b;
+  color: #ffffff;
 }
 .features_container {
   width: 100%;
-  height: 70%;
+  /*height: 70%;*/
+  height: 1150px;
   background-color: white;
 }
 .features_title {
@@ -422,7 +430,43 @@ body{
   color: #666262;
 }
 .features_p {
+  height: 1220px;
   text-align: center;
+}
+.features_content {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  /*background-color: #26a9de;*/
+}
+.content1 {
+  width: 590px;
+  height: 795px;
+  margin-left: 150px;
+  background-color: #f1f1f1;
+}
+.content2 {
+  position: absolute;
+  top: 85px;
+  left: 370px;
+  width: 1220px;
+  height: 600px;
+  background-color: #26a9de;
+}
+.content3 {
+  position: absolute;
+  top:200px;
+  left: 150px;
+  width: 760px;
+  height: 400px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(59,113,186,0.8);
+}
+.content3 span {
+  margin-top: 140px;
+  font-size: 15px;
+  color: #ffffff !important ;
 }
 .features_p span {
   display: inline-block;
@@ -468,4 +512,5 @@ body{
   height: 82%;
   background: pink;
 }
+
 </style>
