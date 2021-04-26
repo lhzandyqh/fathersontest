@@ -21,11 +21,12 @@
       </div>
     </div>
     <div class="carousel_container">
-      <el-carousel trigger="click" height="500px">
-        <el-carousel-item v-for="item in 4" :key="item">
-          <h3 class="small">{{ item }}</h3>
-        </el-carousel-item>
-      </el-carousel>
+      <img src="../assets/contactWay_background.jpg" width="100%" height="100%">
+<!--      <el-carousel trigger="click" height="500px">-->
+<!--        <el-carousel-item v-for="item in 4" :key="item">-->
+<!--          <h3 class="small">{{ item }}</h3>-->
+<!--        </el-carousel-item>-->
+<!--      </el-carousel>-->
       <!--      <Swiper v-if="list.length > 0">-->
       <!--        <Slide v-for="(item,index) in list" :key="index">-->
       <!--        </Slide>-->
