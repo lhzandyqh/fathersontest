@@ -26,7 +26,7 @@
 <!--          <h3 class="small">{{ item }}</h3>-->
 <!--        </el-carousel-item>-->
 <!--      </el-carousel>-->
-      <img src="../assets/homepage2.jpg" width="100%" height="100%">
+      <img :src="new0" width="100%" height="100%">
       <!--      <Swiper v-if="list.length > 0">-->
       <!--        <Slide v-for="(item,index) in list" :key="index">-->
       <!--        </Slide>-->
@@ -35,7 +35,7 @@
     <div class="news_container top_control">
       <div class="news_item" >
         <div class="news_item_img">
-          <img src="../assets/newspage1.png" width="100%" height="100%">
+          <img :src="new1" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
@@ -53,7 +53,7 @@
       </div>
       <div class="news_item" style="margin-left: 5%">
         <div class="news_item_img">
-          <img src="../assets/newspage2.png" width="100%" height="100%">
+          <img :src="new2" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
@@ -71,7 +71,7 @@
       </div>
       <div class="news_item" style="margin-left: 5%">
         <div class="news_item_img">
-          <img src="../assets/newspage3.png" width="100%" height="100%">
+          <img :src="new3" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
@@ -91,7 +91,7 @@
     <div class="news_container top_control" style="margin-bottom: 4%">
       <div class="news_item" >
         <div class="news_item_img">
-          <img src="../assets/newspage4.png" width="100%" height="100%">
+          <img :src="new4" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
@@ -109,7 +109,7 @@
       </div>
       <div class="news_item" style="margin-left: 5%">
         <div class="news_item_img">
-          <img src="../assets/newspage5.png" width="100%" height="100%">
+          <img :src="new5" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
@@ -127,7 +127,7 @@
       </div>
       <div class="news_item" style="margin-left: 5%">
         <div class="news_item_img">
-          <img src="../assets/newspage6.png" width="100%" height="100%">
+          <img :src="new6" width="100%" height="100%">
         </div>
         <div class="news_item_title">
           <div class="item_title_first">
@@ -225,7 +225,7 @@
         </div>
         <div class="er_code_container">
           <div class="er_code_img">
-            <img>
+            <img src="../assets/qrcode.jpg">
           </div>
           <div class="code_title">
             <span>中科智禾服务号</span>
@@ -244,7 +244,13 @@ export default {
   name: 'newPage',
   data () {
     return {
-
+      new0: 'http://zhongkeruitong.top/zg_propagate/news0.jpg',
+      new1: 'http://zhongkeruitong.top/zg_propagate/new1.png',
+      new2: 'http://zhongkeruitong.top/zg_propagate/news2.png',
+      new3: 'http://zhongkeruitong.top/zg_propagate/news3.png',
+      new4: 'http://zhongkeruitong.top/zg_propagate/new4.png',
+      new5: 'http://zhongkeruitong.top/zg_propagate/news5.png',
+      new6: 'http://zhongkeruitong.top/zg_propagate/news6.png'
     }
   },
   methods: {
@@ -458,6 +464,10 @@ body{
   margin-left: 20%;
   margin-top: 10%;
   background-color: #dbdee7;
+}
+.er_code_img img {
+  width: 100%;
+  height: 100%;
 }
 .code_title span {
   font-size: 14px;

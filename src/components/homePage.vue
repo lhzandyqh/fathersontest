@@ -41,11 +41,19 @@
 <!--        </Slide>-->
 <!--      </Swiper>-->
     </div>
+    <div style="width: 100%;height: 100px;background-color: white">
+
+    </div>
     <div class="zg_news_container">
-      <div class="zg_news_head">
-        <span>高职诊改发展</span>
-      </div>
+<!--      <div class="zg_news_head">-->
+<!--        <span>高职诊改发展</span>-->
+<!--      </div>-->
       <div class="zg_news_content">
+        <el-carousel :interval="4000" type="card" height="450px">
+          <el-carousel-item v-for="(item,index) in imgs" :key="index">
+            <img class="carousel-img" :src="item" alt="">
+          </el-carousel-item>
+        </el-carousel>
 <!--        <img src="../assets/homepage2.jpg" width="100%" height="100%">-->
       </div>
     </div>
@@ -54,7 +62,7 @@
         <span>教学诊改平台相关系统</span>
       </div>
       <div class="first_layer">
-        <div class="system_item">
+        <div class="system_item" @click="gotobig">
           <div class="img_container">
             <img src="../assets/icon/keshihua.png">
           </div>
@@ -104,7 +112,7 @@
             <span>专业管理系统</span>
           </div>
         </div>
-        <div class="system_item">
+        <div class="system_item" @click="gotokeyan">
           <div class="img_container">
             <img src="../assets/icon/keyan.png">
           </div>
@@ -135,7 +143,7 @@
             <span>内部质量保证体系建设能力</span>
           </div>
           <div class="features_pic">
-            <img>
+            <img src="../assets/icon/zhiliang_icon.png" >
           </div>
           <div class="features_explain">
             <p>基于“学校、专业、课程、教师、学生”五大层面的内部质量诊断与改进信息化平台，形成自我诊断机制，实现学校治理能力现代化。</p>
@@ -146,7 +154,7 @@
             <span>校园大数据集成与融合能力</span>
           </div>
           <div class="features_pic">
-            <img>
+            <img src="../assets/icon/dashuju_icon.png">
           </div>
           <div class="features_explain">
             <p>针对信息系统业务模块分散建设，各业务系统缺乏统一规划，造成数据孤岛问题，制定集成方案，构建校本数据中心，为学校内部质量分析提供数据支撑服务。</p>
@@ -157,7 +165,7 @@
             <span>大数据可视化及智能分析能力</span>
           </div>
           <div class="features_pic">
-            <img>
+            <img src="../assets/icon/keshihua_icon.png">
           </div>
           <div class="features_explain">
             <p>为校领导、各级管理机构和教师，提供五大层面的实时数据分析展现，及时发现校园管理与教学活动中的问题，为学校领导决策提供辅助和依据。</p>
@@ -168,7 +176,7 @@
             <span>统一平台支撑服务能力</span>
           </div>
           <div class="features_pic">
-            <img>
+            <img src="../assets/icon/tongyi_icon.png">
           </div>
           <div class="features_explain">
             <p>提供统一身份认证、统一消息服务、统一流程管理等统一服务，集成各业务系统的入口，打通各应用系统的边界，为用户提供综合服务门户平台。</p>
@@ -176,6 +184,7 @@
         </div>
       </div>
     </div>
+    <div style="width: 100%; height: 50px; background-color: white"></div>
     <div class="footer">
       <div class="footer_content">
         <div class="p_one">
@@ -257,7 +266,7 @@
         </div>
         <div class="er_code_container">
           <div class="er_code_img">
-            <img>
+            <img src="../assets/qrcode.jpg">
           </div>
           <div class="code_title">
             <span>中科智禾服务号</span>
@@ -284,6 +293,7 @@ export default {
   },
   data () {
     return {
+      imgs: ['http://zhongkeruitong.top/zg_propagate/1.jpg', 'http://zhongkeruitong.top/zg_propagate/2.jpg', 'http://zhongkeruitong.top/zg_propagate/3.jpg'],
       // list: [1,2,3,4]
       swiperOption: {
         // autoplay: {
@@ -322,6 +332,12 @@ export default {
     },
     gotoNewspage: function () {
       this.$router.push({path: '/newspage#'})
+    },
+    gotobig: function () {
+      window.open('https://zhongkeruitong.top/zgbigscreen-show2/#/')
+    },
+    gotokeyan: function () {
+      window.open('http://58.119.112.15:11002/static/index.html')
     }
   }
 }
@@ -512,6 +528,7 @@ body{
   width: 100%;
   height: 30%;
   background-color: skyblue;
+  /*margin-top: 50px;*/
 }
 .footer_content {
   width: 100%;
@@ -590,6 +607,10 @@ body{
   margin-top: 10%;
   background-color: #dbdee7;
 }
+.er_code_img img {
+  width: 100%;
+  height: 100%;
+}
 .code_title span {
   font-size: 14px;
   color: #ffffff;
@@ -610,7 +631,7 @@ body{
   font-size: 35px;
   font-weight: bold;
   margin-top: 1.5%;
-  color: #666262;
+  color: #414040;
 }
 .features_p {
   text-align: center;
@@ -642,7 +663,8 @@ body{
   margin-top: 5%;
 }
 .features_head span {
-  color: #656363;
+  font-weight: bold;
+  color: #414040;
 }
 .features_pic {
   width: 100%;
@@ -650,6 +672,11 @@ body{
   /*background: #42b983;*/
   text-align: center;
   margin-top: 6%;
+}
+.features_pic img {
+  width: 45% !important;
+  height: 70% !important;
+  margin-top: 5% !important;
 }
 .features_explain {
   width: 80%;
@@ -685,6 +712,10 @@ body{
 .zg_news_content {
   width: 100%;
   height: 82%;
-  background: pink;
+  /*background: pink;*/
+}
+.carousel-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 </style>

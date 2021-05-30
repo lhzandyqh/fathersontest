@@ -20,17 +20,6 @@
         </ul>
       </div>
     </div>
-<!--    <div class="carousel_container">-->
-<!--      <el-carousel trigger="click" height="500px">-->
-<!--        <el-carousel-item v-for="item in 4" :key="item">-->
-<!--          <h3 class="small">{{ item }}</h3>-->
-<!--        </el-carousel-item>-->
-<!--      </el-carousel>-->
-<!--      &lt;!&ndash;      <Swiper v-if="list.length > 0">&ndash;&gt;-->
-<!--      &lt;!&ndash;        <Slide v-for="(item,index) in list" :key="index">&ndash;&gt;-->
-<!--      &lt;!&ndash;        </Slide>&ndash;&gt;-->
-<!--      &lt;!&ndash;      </Swiper>&ndash;&gt;-->
-<!--    </div>-->
     <div class="features_container">
       <div class="features_title">
         <span>关于我们</span>
@@ -40,23 +29,64 @@
           <div class="content1"></div>
           <div class="content2"></div>
           <div class="content3">
-            <span>&#8195;&#8195;深度研究相关政策，并与高职院校积极合作，积累了信息化规划设计、标准建设、系统集成、项目实施、运行维护的经验，为高职院校教学诊改建设提供嗯咯完整的解决方案并取得了良好的效果</span>
+            <span>&#8195;&#8195;
+              中科智禾（北京）科技发展公司由中科院信息科技领域相关专家发起成立。她整合中科院和山东大学大数
+              据和人工智能领域的科技力量，面向垂直行业智能化发展和提升，开展应用研究和研发实践，成立山东大学“大数据技术与认
+              知智能实验室”，落地于北京和济南两地挂牌。
+            </span>
           </div>
         </div>
       </div>
-<!--      <div class="features_detail">-->
-<!--&lt;!&ndash;        <div class="features_item">&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="features_item">&ndash;&gt;-->
-
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="features_item">&ndash;&gt;-->
-
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="features_item">&ndash;&gt;-->
-
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--      </div>-->
+    </div>
+    <div class="pic_con_one">
+      <div class="one_img_container">
+        <img :src="aboutone">
+      </div>
+    </div>
+    <div class="one_shuoming_con">
+      <p>我们定位在前沿科技研发与行业及市场需求相结合，通过发挥在大数据与人工智能领域的科研与技术优势，形成助推产业发展的科技智库与产
+        学研协同创新技术实践服务与Ai产品研发平台。在教育信息化与智能化、医疗智能化与健康管理、智慧城市建设（智慧工地、智慧水利等）、工业大数
+        据与智能园区等领域，开展深入工作推进。</p>
+    </div>
+    <div class="pic_con_one">
+      <div class="one_img_container">
+        <img :src="abouttwo">
+      </div>
+    </div>
+    <div class="one_shuoming_con">
+      <p>我们核心团队中具有正高级职称和博士学位专家超过1/3，团队成员均为研究生学历。目前科研及技术研发队伍50余人，包括中科院和
+        山东大学相关专家、产业资深工程师、硕士博士研究生。团队在大数据技术、NLP与知识图谱、
+        计算机视觉等方向的科研积累与应用实践，服务在科技咨询、产品研发、技术服务等方向的支撑。</p>
+    </div>
+    <div class="one_shuoming_con">
+      <p>在与政府、园区、产业对接融合过程中，有效汇聚产业资源和创新需求，逐步搭建科研与产业融合及科技转移转化平台，同时推
+        进大数据与人工智能领域高层次实用型人才培养，实现在产学研融合驱动下政府科技战略实施与产业创新落地标杆和示范。</p>
+    </div>
+    <div class="two_pic_container">
+      <div class="two_head">
+        <span>服务领域</span>
+      </div>
+      <div class="two_pic">
+        <img :src="aboutthree">
+      </div>
+    </div>
+    <div class="two_pic_container">
+      <div class="two_head">
+<!--        <span>服务领域</span>-->
+      </div>
+      <div class="two_pic">
+        <img :src="aboutfour">
+      </div>
+    </div>
+    <div style="width: 100%;height: 100px;">
+    </div>
+    <div class="three_pic_container">
+      <div class="three_head">
+        <span>软件著作权（近三年）</span>
+      </div>
+      <div class="three_pic">
+        <img :src="aboutfive">
+      </div>
     </div>
     <div class="footer">
       <div class="footer_content">
@@ -139,7 +169,7 @@
         </div>
         <div class="er_code_container">
           <div class="er_code_img">
-            <img>
+            <img src="../assets/qrcode.jpg">
           </div>
           <div class="code_title">
             <span>中科智禾服务号</span>
@@ -158,7 +188,11 @@ export default {
   name: 'aboutUs',
   data () {
     return {
-
+      aboutone: 'http://zhongkeruitong.top/zg_propagate/aboutus1.png',
+      abouttwo: 'http://zhongkeruitong.top/zg_propagate/aboutus2.png',
+      aboutthree: 'http://zhongkeruitong.top/zg_propagate/aboutus3.png',
+      aboutfour: 'http://zhongkeruitong.top/zg_propagate/aboutus4.png',
+      aboutfive: 'http://zhongkeruitong.top/zg_propagate/aboutus5.png'
     }
   },
   methods: {
@@ -416,6 +450,10 @@ body{
   margin-top: 10%;
   background-color: #dbdee7;
 }
+.er_code_img img {
+  width: 100%;
+  height: 100%;
+}
 .code_title span {
   font-size: 14px;
   color: #ffffff;
@@ -450,7 +488,7 @@ body{
   /*background-color: #26a9de;*/
 }
 .content1 {
-  width: 590px;
+  width: 50%;
   height: 795px;
   margin-left: 150px;
   background-color: #f1f1f1;
@@ -458,23 +496,25 @@ body{
 .content2 {
   position: absolute;
   top: 85px;
-  left: 370px;
-  width: 1220px;
+  left: 20%;
+  width: 70%;
   height: 600px;
-  background-color: #26a9de;
+  /*background-color: #26a9de;*/
+  background: url("../assets/about0.png") no-repeat;
+  background-size: 100%;
 }
 .content3 {
   position: absolute;
   top:200px;
   left: 150px;
-  width: 760px;
+  width: 35%;
   height: 400px;
   font-weight: bold;
   color: white;
   background-color: rgba(59,113,186,0.8);
 }
 .content3 span {
-  margin-top: 140px;
+  margin-top: 90px;
   font-size: 15px;
   color: #ffffff !important ;
 }
@@ -522,5 +562,94 @@ body{
   height: 82%;
   background: pink;
 }
-
+.content4 {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  left: 49%;
+  top: 30%
+}
+.content4 img {
+  width: 100%;
+  height: 100%
+}
+.pic_con_one {
+  height: 100%;
+  height: 500px;
+  background-color: white;
+  position: relative;
+}
+.one_img_container {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  left: 25%;
+}
+.one_img_container img {
+  width: 100%;
+  height: 100%;
+}
+.one_shuoming_con {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  text-align: center;
+  position: relative;
+}
+.one_shuoming_con p {
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  font-size: 1.2rem;
+  color: #666262;
+}
+.two_pic_container {
+  width: 100%;
+  height: 500px;
+}
+.two_head {
+  height: 100px;
+  /*background-color: #666262;*/
+  text-align: center;
+}
+.two_head span {
+  line-height: 100px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #656363;
+}
+.two_pic {
+  width: 50%;
+  height: 80%;
+  margin-left: 25%;
+}
+.two_pic img {
+  height: 100%;
+  width: 100%;
+}
+.three_pic_container {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+}
+.three_head {
+  height: 100px;
+  /*background-color: #666262;*/
+  text-align: center;
+}
+.three_head span {
+  line-height: 100px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #656363;
+}
+.three_pic {
+  width: 50%;
+  height: 80%;
+  margin-left: 25%;
+}
+.three_pic img {
+  height: 100%;
+  width: 100%;
+}
 </style>

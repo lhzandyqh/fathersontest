@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="carousel_container">
-      <img src="../assets/contactWay_background.jpg" width="100%" height="100%">
+      <img :src="contactWay" width="100%" height="100%">
 <!--      <el-carousel trigger="click" height="500px">-->
 <!--        <el-carousel-item v-for="item in 4" :key="item">-->
 <!--          <h3 class="small">{{ item }}</h3>-->
@@ -47,8 +47,8 @@
                 <img src="../assets/icon/dianhua.png">
               </div>
               <div class="con_chart">
-                <p style="font-size: 18px"><span style="font-weight: bold;font-size: 18px">座机：</span>001-8273892</p>
-                <p style="font-size: 18px"><span style="font-weight: bold;font-size: 18px">手机：</span>18302033203 13063527289</p>
+                <p style="font-size: 18px"><span style="font-weight: bold;font-size: 18px">座机：</span>400-168-6292</p>
+                <p style="font-size: 18px"><span style="font-weight: bold;font-size: 18px">手机：</span>13381173397</p>
               </div>
             </div>
             <div class="email_con">
@@ -57,7 +57,7 @@
               </div>
               <div class="email_char">
                 <p style="font-size: 14px"><span style="font-weight: bold;font-size: 14px">邮箱：</span></p>
-                <p style="font-size: 14px">1306389@zh.com</p>
+                <p style="font-size: 14px">zkzh_edu@163.com</p>
               </div>
             </div>
             <div class="chuan_con">
@@ -70,6 +70,7 @@
 <!--                <p style="font-size: 14px">3434552245</p>-->
 <!--              </div>-->
               <div class="wx_img">
+                <img src="../assets/qrcode.jpg">
               </div>
             </div>
           </div>
@@ -89,7 +90,7 @@
                 <p style="font-size: 18px; font-weight: bold;color: #050505"><span style="font-weight: bold;font-size: 18px">联系地址：</span></p>
                 <p style="font-size: 18px">北京：北京市海淀区中关村科学院南路14号</p>
                 <p style="font-size: 18px">济南：山东济南高新区舜华路1500号</p>
-                <p style="font-size: 18px">石家庄：河北石家庄桥西区大经街28号</p>
+                <p style="font-size: 18px">石家庄：石家庄市长安区中山东路581号瑞城F3</p>
                 <p style="font-size: 18px">沈阳：沈阳市东陵区南坪东路16号</p>
               </div>
             </div>
@@ -178,7 +179,7 @@
         </div>
         <div class="er_code_container">
           <div class="er_code_img">
-            <img>
+            <img src="../assets/qrcode.jpg">
           </div>
           <div class="code_title">
             <span>中科智禾服务号</span>
@@ -197,7 +198,7 @@ export default {
   name: 'contactWay',
   data () {
     return {
-
+      contactWay: 'http://zhongkeruitong.top/zg_propagate/contact1.jpg'
     }
   },
   methods: {
@@ -455,9 +456,13 @@ body{
   margin-top: 10%;
   background-color: #dbdee7;
 }
+.er_code_img img {
+  width: 100%;
+  height: 100%;
+}
 .code_title span {
   font-size: 14px;
-  color: #c4aeae;
+  color: #aea4a4;
 }
 .features_container {
   width: 100%;
@@ -542,7 +547,7 @@ body{
   left: 24%;
 }
 .email_con {
-  width: 24%;
+  width: 25%;
   height: 100%;
   /*background-color: #75e744;*/
   box-shadow: #ccc 5px 0px 8px 0px;
@@ -588,16 +593,16 @@ body{
   float: left;
 }
 .wx_img {
-  width: 38%;
-  height: 5%;
+  width: 50%;
+  height: 60%;
   background-color: #44b7e7;
   position: absolute;
   top: 24%;
   left: 45%;
 }
 .wx_img img{
-  /*width: 50%;*/
-  /*height: 50%;*/
+  width: 100%;
+  height: 100%;
   /*background-color: #44b7e7;*/
 }
 .address_con {
