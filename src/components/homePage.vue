@@ -6,7 +6,7 @@
         <img class="logo_university" src="../assets/home_university.jpg">
         <div class="span_container">
           <div class="logo_span">
-            <span>教学诊改平台</span>
+            <span>教学诊改综合治理平台</span>
           </div>
         </div>
       </div>
@@ -69,6 +69,9 @@
           <div class="img_title">
             <span>诊改可视化大屏平台</span>
           </div>
+          <div class="item_context">
+            <span>多系统数据整合能力，构建数据分析模型，校园信息综合分析展示</span>
+          </div>
         </div>
         <div class="system_item">
           <div class="img_container">
@@ -77,13 +80,19 @@
           <div class="img_title">
             <span>内部质量管理系统</span>
           </div>
+          <div class="item_context">
+            <span>各层面诊改指标规划设计，各部门任务下发审核质量监控，各维度诊断报告生成，规划任务过程文档收录</span>
+          </div>
         </div>
         <div class="system_item">
           <div class="img_container">
             <img src="../assets/icon/jiaoshi.png">
           </div>
           <div class="img_title">
-            <span>教师发展平台</span>
+            <span>人事发展平台</span>
+          </div>
+          <div class="item_context">
+            <span>高度贴合高效工作业务流转，高效管理人事工作信息，流转全程跟踪，辅助人事评价</span>
           </div>
         </div>
         <div class="system_item">
@@ -92,6 +101,9 @@
           </div>
           <div class="img_title">
             <span>学生发展平台</span>
+          </div>
+          <div class="item_context">
+            <span>学涯规划发展目标设定，学籍信息数字化管理，校园生活日常化记录，学生就业反馈追溯</span>
           </div>
         </div>
       </div>
@@ -103,6 +115,9 @@
           <div class="img_title">
             <span>资产可视化平台</span>
           </div>
+          <div class="item_context">
+            <span>资产流转、资产精准定位、资产权限分配、资产安全追溯</span>
+          </div>
         </div>
         <div class="system_item">
           <div class="img_container">
@@ -111,6 +126,9 @@
           <div class="img_title">
             <span>专业管理系统</span>
           </div>
+          <div class="item_context">
+            <span>专业课程情况总览、招生情况教学资源统计、实训项目校企合作管理、顶岗实习就业情况收集</span>
+          </div>
         </div>
         <div class="system_item" @click="gotokeyan">
           <div class="img_container">
@@ -118,6 +136,9 @@
           </div>
           <div class="img_title">
             <span>科研管理系统</span>
+          </div>
+          <div class="item_context">
+            <span>精准贴合科研业务场景，全程跟踪管理科研活动，辅助教师科研绩效评测，智能分配科研资源</span>
           </div>
         </div>
         <div class="system_item">
@@ -399,9 +420,9 @@ body{
 }
 .logo_span {
   position: absolute;
-  width: 150%;
+  width: 250%;
   top: 50%;
-  left: 60%;
+  left: 100%;
   transform: translate(-40%,-50%);
 }
 .logo_span span {
@@ -513,7 +534,7 @@ body{
 .img_container img {
   width: 30%;
   height: 20%;
-  margin-top: 13%;
+  margin-top: 6%;
 }
 .img_title {
   text-align: center;
@@ -521,8 +542,17 @@ body{
 .img_title span {
   font-weight: bold;
   display: inline-block;
-  margin-top: 5%;
+  margin-top: 4%;
   color: #44b7e7;
+}
+.item_context {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+  font-size: 14px;
+  /*color: #666262;*/
+  color: #050505;
+  /*background-color: blue;*/
 }
 .footer {
   width: 100%;

@@ -6,7 +6,7 @@
         <img class="logo_university" src="../assets/home_university.jpg">
         <div class="span_container">
           <div class="logo_span">
-            <span>教学诊改平台</span>
+            <span>教学诊改综合治理平台</span>
           </div>
         </div>
       </div>
@@ -328,9 +328,9 @@ body{
 }
 .logo_span {
   position: absolute;
-  width: 150%;
+  width: 250%;
   top: 50%;
-  left: 60%;
+  left: 100%;
   transform: translate(-40%,-50%);
 }
 .logo_span span {
